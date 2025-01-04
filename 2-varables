@@ -1,0 +1,8 @@
+#!/bin/bash
+PAVAN=PERSION1
+SATYA=PERSION2
+
+echo "PERSION2 ; HI SATYA"
+echo "satya ; good morning"
+echo "pavan : nooooo"
+echo "satya ; yess"
