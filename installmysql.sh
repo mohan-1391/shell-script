@@ -2,7 +2,7 @@
 
 USERID=(id -u)
 
-if ( $userid -ne 0 )
+if ( $USERID -ne 0 )
 then 
      echo "Error : user must be root user"
  exit 1     
