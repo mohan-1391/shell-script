@@ -22,19 +22,21 @@ if [ $? -ne 0 ]
     fi    
 else 
     echo "my sql already installed"
-    fi  
+    fi 
+
 dnf list installed git
 
 if [ $? -ne 0 ]
    then
-       dnf install git
+       dnf install git -y
        if [ $? -eq 0]
           then 
           echo "git installed sucessfully"
           fi
         else 
              echo "git installation failed"
-    fi
+             exit 1
+        fi
 else
    echo "git already installed"
 fi           
