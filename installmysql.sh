@@ -24,7 +24,7 @@ else
     echo "my sql already installed"
     fi  
 
-if [ $? -e 0 ]
+if [ $? -eq 0 ]
    then 
     systemctl enable mysqld 
     systemctl start mysqld
