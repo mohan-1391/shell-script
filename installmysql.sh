@@ -22,4 +22,9 @@ if [ $? -ne 0 ]
     fi    
 else 
     echo "my sql already installed"
-    fi            
+    fi  
+
+if [ $? -e 0 ]
+   then 
+    systemctl enable mysqld 
+    systemctl start mysqld            
