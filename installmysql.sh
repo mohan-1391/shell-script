@@ -27,4 +27,5 @@ else
 if [ $? -e 0 ]
    then 
     systemctl enable mysqld 
-    systemctl start mysqld            
+    systemctl start mysqld
+fi            
