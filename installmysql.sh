@@ -8,13 +8,13 @@ if [ $USERID -ne 0 ]
  exit 1     
 fi
 
-dnf installed list mysql
+dnf list installed mysql
 
 if [ $? -ne 0 ]
  then
     dnf install mysql -y
     if [ $? -ne 0 ]
-    then
+     then
         echo "my sql instalation failed"
         exit 1
     else 
