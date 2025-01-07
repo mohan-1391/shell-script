@@ -9,7 +9,7 @@ if [ $USERID -ne 0 ]
 fi
 dnf install list mysql
 if [ $? -ne 0 ]
-then
+ then
     dnf install mysql -y
     if [ $? -ne 0 ]
     then
