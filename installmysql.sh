@@ -23,9 +23,18 @@ if [ $? -ne 0 ]
 else 
     echo "my sql already installed"
     fi  
+dnf list installed git
 
-if [ $? -eq 0 ]
-   then 
-    systemctl enable mysqld 
-    systemctl start mysqld
-fi            
+if [ $? -ne 0 ]
+   then
+       dnf install git
+       if [ $? -eq 0]
+          then 
+          echo "git installed sucessfully"
+          fi
+    else 
+        echo "git installation failed"
+    fi
+else
+   echo "git already installed"
+fi           
