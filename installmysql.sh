@@ -32,8 +32,8 @@ if [ $? -ne 0 ]
           then 
           echo "git installed sucessfully"
           fi
-    else 
-        echo "git installation failed"
+        else 
+             echo "git installation failed"
     fi
 else
    echo "git already installed"
