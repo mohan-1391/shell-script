@@ -7,7 +7,9 @@ if [ $USERID -ne 0 ]
      echo "Error : user must be root user"
  exit 1     
 fi
-dnf install list mysql
+
+dnf installed list mysql
+
 if [ $? -ne 0 ]
  then
     dnf install mysql -y
@@ -17,6 +19,7 @@ if [ $? -ne 0 ]
         exit 1
     else 
         echo "my sql installed successfully"
+    fi    
 else 
     echo "my sql already installed"
     fi            
