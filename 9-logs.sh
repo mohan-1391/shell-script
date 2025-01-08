@@ -8,7 +8,7 @@ Y="\e[33m"
 LOG_FOLDER="/var/log/shellscript.log"
 LOG_FILE=$(echo $0 | cut -d "." -f1 )
 TIMESTAMP=$(date +%y-%m_%d-%H-%M)
-LOG_FILE_NAME="$LOG_FOLDER/$LOG_FILE/$TIMESTAMP .LOG"
+LOG_FILE_NAME="$LOG_FOLDER/$LOG_FILE/$TIMESTAMP .log"
 
 echo "Script started executing at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
